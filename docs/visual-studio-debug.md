@@ -1,5 +1,10 @@
 # Hướng dẫn debug cơ bản với Visual Studio
 
+[Sử dụng Breakpoint](#breakpoint)\
+[Sử dụng CallStack](#callstack)\
+[Xem giá trị biến, biểu thức nhanh bằng chuột](#quickview)\
+[Sử dụng Watch Window](#watchwindow)
+
 > Lưu ý, chạy rồi mới debug được nhé
 
 Thay vì đọc code và suy nghĩ xem lỗi ở đâu, ta nên dùng debug tool để tìm lỗi một cách nhanh gọn lẹ.
@@ -30,7 +35,7 @@ Debug trong Visual Studio cho phép bạn chạy chương trình từng bước 
 
 ## Thực hiện debug 1 chương trình (cơ bản)
 
-### Sử dụng Breakpoint
+### Sử dụng Breakpoint <a name="breakpoint"></a>
 
 Click vào rìa bên trái tại dòng code cần bắt đầu debug để đặt *breakpoint*. *Breakpoint* sẽ có màu đỏ như hình dưới.
 
@@ -49,7 +54,7 @@ Các nút điều khiển Debug cơ bản:
 - **Step Into (F11)**:  chạy lần lượt các câu lệnh và đi vào hàm con.
 - **Step Out (Shift + F11)**: Lướt qua hàm con hiện tại để trở về hàm trước. Ngoài ra có thể dùng nó để nhảy qua breakpoint kế tiếp.
 
-### Sử dụng CallStack
+### Sử dụng CallStack <a name="callstack"></a>
 
 **Call Stack** dùng để xem các lời gọi hàm hoặc thủ tục hiện có trong *Stack*. Để mở cửa sổ **Call Stack** thì khi đang debug, chọn menu `Debug → Windows → Call Stack`
 
@@ -61,13 +66,13 @@ Cửa sổ sẽ Call Stack hiển thị tên của từng hàm kèm theo danh s�
 
 Mũi tên màu vàng chỉ ra Stack Frame nơi con trỏ thực thi đang nằm. Theo mặc định thì các thông tin liên quan của Frame này sẽ hiển thị trong các cửa sổ *Disassembly*, *Locals*, *Watch*, và *Autos*.
 
-### Xem giá trị biến, biểu thức nhanh bằng chuột
+### Xem giá trị biến, biểu thức nhanh bằng chuột <a name="quickview"></a>
 
 Trong quá trình Debug, bạn có thể di chuột đến bất kỳ biến nào để xem giá trị hoặc thay đổi giá trị của biến. Ngoài ra có thể ghim popup tại màn hình để tiện theo dõi.
 
 ![Cách mở call stack](../img/vs/breakpoint_tip.png)
 
-### Sử dụng Watch Window
+### Sử dụng Watch Window <a name="watchwindow"></a>
 
 Watch Window là cửa sổ sử dụng để theo dõi sự thay đổi giá trị của các biến (local hay global đều được hết).
 
